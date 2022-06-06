@@ -39,9 +39,10 @@ programmation de votre choix (bash, python, go, nodejs, etc)
 
 ``` python3 -m venv myvenv```
 
-puis 
+then
+
 ```bash pip freeze -> requirements.txt```
- pour installer dans les conteneurs les packages et librairies 
+
 
 
 
