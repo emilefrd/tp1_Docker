@@ -71,4 +71,5 @@ then
 
 ## Remarks
 > Keys : API, lat et lon are retrived on openwheather
+
 > Reading of the key thanks to different functions already implemented, for exemple load_totenv() and os.environ["Clé"]
