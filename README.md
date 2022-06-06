@@ -50,19 +50,27 @@ then
 
 #### Request :
 ```getter = requests.get("https://api.openweathermap.org/data/2.5/weather?lat=" + Y + "&lon=" + X + "&appid=" + APIKEY + "&units=metric") ```
+
 #### Build image : 
 ```docker build --tag mywrapper .```
+
 #### Local run : 
 ```docker run -p 5000:5000 --env Y ="5.902785" --env X ="102.754175" --env APIKEY=$APIKEY --rm mywrapper```
+
+
 #### Push on DockerHub
 > Get id :
  ```docker images ```
+ 
 > Login to DockerHub : 
 ```docker login --username=emilefrd```
+
 > Push :
  ```docker push emilefrd/tp1 ```
+ 
 > Get : 
 ```docker pull emilefrd/tp1```
+
 > Running : 
 ```docker run --env Y ="5.902785" --env X ="102.754175" --env API_KEY=$APIKEY emilefrd/tp1```
 
